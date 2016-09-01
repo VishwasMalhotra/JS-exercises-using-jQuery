@@ -1,0 +1,43 @@
+<html>
+   <head>
+      <title> Multiple Select Box </title>
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.8.0/jquery.min.js"></script>
+      <script type="text/javascript" src="script.js"></script>  
+      <style type="text/css">   
+         div {  
+         float:left;  
+         text-align: center;  
+         margin: 10px;  
+         }  
+         select {  
+         width: 200px;  
+         height: 80px;  
+         }  
+      </style>
+   </head>
+   <body>
+      <div>
+         <select multiple id="selectListOne">
+            <option value="BG">Bulgaria</option>
+            <option value="BF">Burkina Faso</option>
+            <option value="BI">Burundi</option>
+            <option value="KH">Cambodia</option>
+            <option value="CM">Cameroon</option>
+            <option value="CA">Canada</option>
+            <option value="VG">Virgin Islands, British</option>
+            <option value="VI">Virgin Islands, U.S.</option>
+            <option value="WF">Wallis and Futuna</option>
+            <option value="EH">Western Sahara</option>
+            <option value="YE">Yemen</option>
+            <option value="ZM">Zambia</option>
+         </select>
+      </div>
+      <div> 
+         <button id="add"> Add </button><br/><br/>
+         <button id="remove"> Remove </button>     
+      </div>
+      <div>  
+         <select multiple id="selectListTwo"></select>  
+      </div>
+   </body>
+</html>

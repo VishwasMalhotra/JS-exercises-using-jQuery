@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+   <head>
+      <title> Exercise - JavaScript </title>
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.8.0/jquery.min.js"></script>
+      <script src="script.js"></script>
+      <style>
+         #one{
+         width:400px;
+         height:100px;
+         overflow:scroll;
+         text-align:left;
+         margin-left:430px;
+         margin-top: 90px;
+         border:solid 2px;
+         }
+      </style>
+   </head>
+   <body>
+      <h2> JavaScript - Exercise </h2>
+      <p>Create a div with height 100 and scroll bars. Display a list of checkbox color, drinks, movies and bikes in this div.<br/><br/>
+         Now when you click on color checkbox it should display four checkboxes(red, yellow, green, blue) as a child list and color checkbox should be checked with its child list of checkboxes.<br/> <br/>
+         Again when you click on color checkbox child list should be hidden and its child checkboxes should get deselected(clear state). <br/><br/>
+         Same with movies, drink and bikes.<br/><br/>
+         movies: [Dar, Sir]
+         drinks: [coke, pepsi, dew]
+         bikes: [V-rod, pulsar, cbz]<br/><br/>
+         Remember: When you click on a parent checkbox and if child list checkboxes are out of visible area the div's scrollbars should scroll and child list should be visible automatically. 
+         We should not scroll the div to see them(child list of checkboxes).
+      </p>
+      <div id="one">
+	  <div id="apple">
+         <input type="checkbox" class="parentCheckBox" value="Color" id="Color"> <label for = "Color"> Color </label> <br/>
+         <div class = "childDiv">
+            <input type="checkbox" class="childCheckBox" value="Color" id="Red"> <label class="miniLabel" for = "Red"> Red </label> 
+            <input type="checkbox" class="childCheckBox" value="Color" id="Yellow"> <label class="miniLabel" for = "Yellow"> Yellow </label> 
+            <input type="checkbox" class="childCheckBox" value="Color" id="Green"> <label class="miniLabel" for = "Green"> Green </label> 
+            <input type="checkbox" class="childCheckBox" value="Color" id="Blue"> <label class="miniLabel" for = "Blue"> Blue </label> <br/>
+         </div>
+		 </div>
+         <input type="checkbox" class="parentCheckBox" value="Movies" id="Movies"> <label for = "Movies"> Movies </label> <br/>
+         <div class = "childDiv">
+            <input type="checkbox" class="childCheckBox" value="Movies" id="Dar"> <label class="miniLabelOne" for = "Dar"> Dar </label> 
+            <input type="checkbox" class="childCheckBox" value="Movies" id="Sir"> <label class="miniLabelOne" for = "Sir"> Sir </label> <br/>
+         </div>
+         <input type="checkbox" class="parentCheckBox" value="Drinks" id="Drinks"> <label for = "Drinks"> Drinks </label> <br/>
+         <div class = "childDiv">
+            <input type="checkbox" class="childCheckBox" value="Drinks" id="Coke"> <label class="miniLabelTwo" for = "Coke"> Coke </label> 
+            <input type="checkbox" class="childCheckBox" value="Drinks" id="Pepsi"> <label class="miniLabelTwo" for = "Pepsi"> Pepsi </label> 
+            <input type="checkbox" class="childCheckBox" value="Drinks" id="Dew"> <label class="miniLabelTwo" for = "Dew"> Dew </label><br/>
+         </div>
+         <input type="checkbox" class="parentCheckBox" value="Bikes" id="Bikes"> <label for = "Bikes"> Bikes </label> <br/>
+         <div class = "childDiv">
+            <input type="checkbox" class="childCheckBox" value="Bikes" id="VRod"> <label class="miniLabelThree" for = "VRod"> VRod </label> 
+            <input type="checkbox" class="childCheckBox" value="Bikes" id="Pulsar"> <label class="miniLabelThree" for = "Pulsar"> Pulsar </label> 
+            <input type="checkbox" class="childCheckBox" value="Bikes" id="CBZ"> <label class="miniLabelThree" for = "CBZ"> CBZ </label> 
+         </div>
+      </div>
+   </body>
+</html>

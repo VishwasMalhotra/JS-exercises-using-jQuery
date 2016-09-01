@@ -1,0 +1,109 @@
+<html>
+   <head>
+      <title> JavaScript - Form Validation </title>
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.8.0/jquery.min.js"></script>
+      <script src="script.js"></script>
+      <style>
+         *{margin: 0;
+         padding: 0;}
+         #header {
+         width: 58.75%;
+         height: 10%;
+         background-color: #3CB371;
+         text-align: center;
+         text-size:250px;
+         margin-left:20%;
+         margin-right:20%;
+         padding: 9px 9px 9px 9px;
+         font-family:"Times New Roman", Georgia, Serif;
+         font-size: 40px;
+         }
+         #main {
+         background-color:98FB98;
+         width: 60%;
+         text-align: Left;
+         font-size: 20px;
+         margin-left:20%;
+         margin-right:20%;
+         font-family:"Times New Roman", Georgia, Serif;
+         font-size: 40px;
+         }
+         #txt {
+         padding: 50px 50px 50px 50px;
+         font-size: 20px;
+         font-family:"Times New Roman", Georgia, Serif;
+         height: 90%;
+         }
+         #inhead {
+         }
+         span {
+         text-align:center;
+         }
+         .bn{
+         text-align: center;
+         }
+         .button {
+         position: relative;
+         top: 50%;
+         width:50;
+         height:20;
+         }
+         .inputClass {
+         padding: 10px 10px 10px 10px;
+         margin-left: 30%;
+         width: 200px;
+         }
+         .labelClass {
+         display: inline-block;
+         width: 15%;
+         height: 2%;
+         }
+         .intxt {
+         margin-left:0%;
+         width=400px;
+         padding: 10px 10px 10px 10px;
+         }
+      </style>
+   </head>
+   <body>
+      <div id="header">
+         Registeration Form
+      </div>
+      <div id="main">
+         <div id="txt">
+            <form  id="myForm" onsubmit="validateForm();">
+               <table>
+               <tr>
+               <tr><label class="labelClass" for="Login Id">Login Id</label></tr>
+               <tr><input class="inputClass" type="text" id="Login Id"></tr>
+               </br></br>
+               </tr>
+               <label class="labelClass" for="E-mail">E-mail</label>
+               <input class="inputClass" type="text" id="E-mail"></br></br>
+               <label class="labelClass" for="Name">Name</label>
+               <input class="inputClass" type="text" id="Name"></br></br>
+               <label class="labelClass" for="Timezone">Timezone</label>
+               <select class="inputClass" id="Timezone">
+                  <option value="GMT">GMT </option>
+                  <option value="UTC">UTC</option>
+                  <option value="Local">Local </option>
+               </select>
+               </br></br>
+               <label class="labelClass" for="Homepage">Homepage</label>
+               <input class="inputClass" type="text" name="Homepage" id="Homepage"></br></br>
+               <label class="labelClass" for="About Me">About Me</label></br></br>
+               <textarea class="intxt" id="About Me" rows="8" cols="50" minlength="50"></textarea>
+               </br></br>
+               <input type="checkbox" id="service" value="servicelike"><label for="service"> Recieve notification of comments.</label>
+               <p>  You will be sent an e-mail when someone posts comments to your Blog or Album.</p>
+               </span></br>
+               <span>
+               <p>Your password will be mailed to you.</p>
+               <div class="bn">
+                  <button class="button" id="go">Go!</button>
+               </div>
+            </form>
+         </div>
+      </div>
+   </body>
+</html>
